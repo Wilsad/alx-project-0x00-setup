@@ -20,19 +20,19 @@ const Landing: React.FC = () => {
           <div className="flex gap-4 flex-wrap">
             <Button title="Small Rounded-sm" size="small" shape="rounded-sm" />
             <Button title="Small Rounded-md" size="small" shape="rounded-md" />
-            <Button title="Small Rounded-full" size="small" shape="rounded-full" />
+            <Button title="Small Rounded-lg" size="small" shape="rounded-lg" />
           </div>
 
           <div className="flex gap-4 flex-wrap">
             <Button title="Medium Rounded-sm" size="medium" shape="rounded-sm" />
             <Button title="Medium Rounded-md" size="medium" shape="rounded-md" />
-            <Button title="Medium Rounded-full" size="medium" shape="rounded-full" />
+            <Button title="Medium Rounded-lg" size="medium" shape="rounded-lg" />
           </div>
 
           <div className="flex gap-4 flex-wrap">
             <Button title="Large Rounded-sm" size="large" shape="rounded-sm" />
             <Button title="Large Rounded-md" size="large" shape="rounded-md" />
-            <Button title="Large Rounded-full" size="large" shape="rounded-full" />
+            <Button title="Large Rounded-lg" size="large" shape="rounded-lg" />
           </div>
         </div>
       </section>

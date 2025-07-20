@@ -1,7 +1,7 @@
 import React from "react";
 
 type Size = "small" | "medium" | "large";
-type Shape = "rounded-sm" | "rounded-md" | "rounded-full";
+type Shape = "rounded-sm" | "rounded-md" | "rounded-lg"; // Changed from rounded-full to rounded-lg
 
 interface ButtonProps {
   title: string;
@@ -21,7 +21,6 @@ const Button: React.FC<ButtonProps> = ({
     medium: "text-base px-4 py-2",
     large: "text-lg px-6 py-3",
   };
-
   return (
     <button
       className={`bg-blue-500 text-white font-medium ${sizeClasses[size]} ${shape} ${className}`}
