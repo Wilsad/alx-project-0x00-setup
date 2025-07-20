@@ -1,20 +1,12 @@
 import React from "react";
-
-type Size = "small" | "medium" | "large";
-type Shape = "rounded-sm" | "rounded-md" | "rounded-lg"; // Changed from rounded-full to rounded-lg
-
-interface ButtonProps {
-  title: string;
-  size?: Size;
-  shape?: Shape;
-  className?: string;
-}
+import { ButtonProps } from "@/interfaces"; 
 
 const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
   className = "",
+  styles = "", 
 }) => {
   const sizeClasses = {
     small: "text-sm px-2 py-1",
@@ -23,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   };
   return (
     <button
-      className={`bg-blue-500 text-white font-medium ${sizeClasses[size]} ${shape} ${className}`}
+      className={`bg-blue-500 text-white font-medium ${sizeClasses[size]} ${shape} ${className} ${styles}`} // <-- Apply the styles prop here
     >
       {title}
     </button>
